@@ -21,7 +21,7 @@ function validateName(name){ //проверка корректности ФИО
  return regex.test(name);
 }
 
-$('.form').submit(function(e){
+$('.form').submit(function(e){  //обработка и отправка формы
 	e.preventDefault();
 	let email = $('#email').val().trim();
 	let phone = $('#phone').val().trim();

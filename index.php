@@ -83,23 +83,22 @@
 			<div class="col-sm-2 a"><?=$row['email_c']?></div>
 			<div class="col-sm-3 a date"><?=$row['date_c']?></div>
 			<div class="col-sm-2 a rating-result">
-				<?php
-					for($i = 0; $i<$row['rate_c']; ++$i): ?>
-	           			<span class="active"></span>
-	           		<?php  endfor; while($i<5): ?>	
-	           			<span></span>
-	           		<?php ++$i; endwhile; ?>   
+				<?php for($i = 0; $i<$row['rate_c']; ++$i): ?>
+	           		<span class="active"></span>
+	           	<?php  endfor; while($i<5): ?>	
+	           		<span></span>
+	           	<?php ++$i; endwhile; ?>   
             </div>
 			
 		</div>
-	<?php endwhile; ?>
-	<div class="row">
-		<div class="pagination text-center">
-	<?php for($i = 1; $i<=$pages; ++$i): ?>
-		<a href="?page=<?=$i?>"><button class="btn btn-warning btn-pag"><?=$i?></button></a>
-	<?php endfor; ?>
-	</div>	
-	</div>
+		<?php endwhile; ?>
+		<div class="row">
+			<div class="pagination text-center">
+			<?php for($i = 1; $i<=$pages; ++$i): ?>
+				<a href="?page=<?=$i?>"><button class="btn btn-warning btn-pag"><?=$i?></button></a>
+			<?php endfor; ?>
+			</div>	
+		</div>
 
 	</div>
 	

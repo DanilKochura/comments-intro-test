@@ -1,6 +1,7 @@
 body
 {
 	overflow-x: hidden;
+	color: #704214;
 }
 
 .rating-area {
@@ -47,8 +48,9 @@ body
 	font-size: 20px;
 	margin-top: 10px;
 	background-color: #f2e8c9;
-	border: 2px solid brown ;
+	border: 2px solid gold;
 	overflow: hidden;
+	color: #704214;
 }
 .comments
 {
