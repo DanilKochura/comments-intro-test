@@ -1,0 +1,85 @@
+body
+{
+	overflow-x: hidden;
+}
+
+.rating-area {
+	overflow: hidden;
+	width: 250px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 50px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 50px;
+	line-height: 70px;
+	color: lightgrey;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+
+.rating-area > input:checked ~ label,
+.rating-area > label:hover ~ input:checked,
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+
+.rate-area > label:active {
+	position: relative;
+}
+
+.new{
+	margin:  10px;
+	padding:  5px;
+	border-radius: 5px;
+	border: 3px solid gold;
+}
+.comment
+{
+	height: 40px;
+	font-size: 20px;
+	margin-top: 10px;
+	background-color: #f2e8c9;
+	border: 2px solid brown ;
+	overflow: hidden;
+}
+.comments
+{
+	width: 90%;
+}
+
+.rating-result {
+	height: 80%;
+}
+.rating-result span {
+	padding: 0;
+	font-size: 32px;
+	margin: 0 0px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-result > span:before {
+	content: '★';
+}
+.rating-result > span.active {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
+.btn-pag
+{
+	border-radius: 50%;
+	margin: 5px;
+}
+.form-row
+{
+	display: inline-block;
+}
