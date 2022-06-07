@@ -4,7 +4,7 @@
 	$num = $comm->countAll();
 	$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 	$start = 5*($page-1);
-	$limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 5;;
+	$limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 5; 
 	$sort = isset($_GET['sort']) ? (int)$_GET['sort'] : 1;;
 	$pages = ceil($num / $limit);
 	$comments = array();
@@ -56,7 +56,7 @@
 				<h2>Архив комментариев</h2>
 			</div>
 			<div class="col-sm-5">
-				<form action="" method="GET">
+				<form action="?page=1" method="GET">
 					<div class="form-row">
 						<select  name="limit" class="form-control">
 							<option  value="5">5</option>
@@ -69,6 +69,7 @@
 						<option  value="1">По возрастанию</option>
 					</select>
 					</div>
+					<input type="hidden" name="page" value="1">
 					
 					<div class="form-row"><input type="submit" class="form-control"></div>
 				</form>
